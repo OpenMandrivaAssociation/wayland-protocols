@@ -28,7 +28,7 @@ protocol either in Wayland core, or some other protocol in
 wayland-protocols.
 
 %prep
-%setup -qn
+%setup -q
 
 %build
 %configure
