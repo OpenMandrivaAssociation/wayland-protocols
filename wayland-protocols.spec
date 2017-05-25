@@ -31,11 +31,13 @@ wayland-protocols.
 %setup -q
 
 %build
-%configure
+%configure 
+
+mkdir -p %{_buildroot}%{_libdir}/pkgconfig/
 
 %install
-mkdir %{_libdir}/pkgconfig
-cp /%{_datadir}/pkgconfig/%{name}.pc %{_libdir}/pkgconfig/%{name}.pc
+mkdir -p %{buildroot}/%{_libdir}/pkgconfig/
+cp %{name}.pc %{buildroot}/%{_libdir}/pkgconfig/%{name}.pc
 
 %makeinstall_std
 
