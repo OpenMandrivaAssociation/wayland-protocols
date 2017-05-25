@@ -34,9 +34,13 @@ wayland-protocols.
 %configure
 
 %install
+mkdir %{_libdir}/pkgconfig
+cp /%{_datadir}/pkgconfig/%{name}.pc %{_libdir}/pkgconfig/%{name}.pc
+
 %makeinstall_std
 
 %files devel
 %doc README
 %{_libdir}/pkgconfig/%{name}.pc
+%{_datadir}/pkgconfig/%{name}.pc
 %{_datadir}/%{name}/*
