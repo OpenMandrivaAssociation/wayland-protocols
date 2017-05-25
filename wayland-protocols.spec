@@ -38,5 +38,5 @@ wayland-protocols.
 
 %files devel
 %doc README
-%{_datadir}/pkgconfig/%{name}.pc
+%{_libdir}/pkgconfig/%{name}.pc
 %{_datadir}/%{name}/*
