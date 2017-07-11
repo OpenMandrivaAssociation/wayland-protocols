@@ -1,7 +1,7 @@
 Summary:	Wayland protocols that adds functionality not available in the core protocol
 Name:		wayland-protocols
-Version:	1.7
-Release:	2
+Version:	1.8
+Release:	1
 Group:		Development/C
 License:	MIT
 URL:		http://wayland.freedesktop.org/
