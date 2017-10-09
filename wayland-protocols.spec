@@ -1,7 +1,7 @@
 Summary:	Wayland protocols that adds functionality not available in the core protocol
 Name:		wayland-protocols
 Version:	1.10
-Release:	1
+Release:	2
 Group:		Development/C
 License:	MIT
 URL:		http://wayland.freedesktop.org/
@@ -32,8 +32,6 @@ wayland-protocols.
 
 %build
 %configure
-
-mkdir -p %{_buildroot}%{_libdir}/pkgconfig/
 
 %install
 mkdir -p %{buildroot}/%{_libdir}/pkgconfig/
