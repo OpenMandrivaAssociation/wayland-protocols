@@ -1,6 +1,6 @@
 Summary:	Wayland protocols that adds functionality not available in the core protocol
 Name:		wayland-protocols
-Version:	1.15
+Version:	1.16
 Release:	1
 Group:		Development/C
 License:	MIT
