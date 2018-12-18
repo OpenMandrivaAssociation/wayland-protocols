@@ -1,6 +1,6 @@
 Summary:	Wayland protocols that adds functionality not available in the core protocol
 Name:		wayland-protocols
-Version:	1.15
+Version:	1.17
 Release:	1
 Group:		Development/C
 License:	MIT
@@ -28,7 +28,7 @@ protocol either in Wayland core, or some other protocol in
 wayland-protocols.
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
 %configure
@@ -37,7 +37,7 @@ wayland-protocols.
 mkdir -p %{buildroot}/%{_libdir}/pkgconfig/
 cp %{name}.pc %{buildroot}/%{_libdir}/pkgconfig/%{name}.pc
 
-%makeinstall_std
+%make_install
 
 %files devel
 %doc README
