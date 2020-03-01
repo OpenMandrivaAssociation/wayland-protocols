@@ -1,6 +1,6 @@
 Summary:	Wayland protocols that adds functionality not available in the core protocol
 Name:		wayland-protocols
-Version:	1.18
+Version:	1.20
 Release:	1
 Group:		Development/C
 License:	MIT
@@ -40,7 +40,7 @@ cp %{name}.pc %{buildroot}/%{_libdir}/pkgconfig/%{name}.pc
 %make_install
 
 %files devel
-%doc README
+%doc README.md
 %{_libdir}/pkgconfig/%{name}.pc
 %{_datadir}/pkgconfig/%{name}.pc
 %{_datadir}/%{name}/*
