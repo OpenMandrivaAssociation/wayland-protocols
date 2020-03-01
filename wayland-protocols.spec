@@ -40,7 +40,7 @@ cp %{name}.pc %{buildroot}/%{_libdir}/pkgconfig/%{name}.pc
 %make_install
 
 %files devel
-%doc README
+%doc README.md
 %{_libdir}/pkgconfig/%{name}.pc
 %{_datadir}/pkgconfig/%{name}.pc
 %{_datadir}/%{name}/*
