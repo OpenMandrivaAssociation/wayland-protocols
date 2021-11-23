@@ -34,6 +34,8 @@ wayland-protocols.
 %build
 %meson
 
+%meson_build
+
 %install
 mkdir -p %{buildroot}/%{_libdir}/pkgconfig/
 cp %{name}.pc %{buildroot}/%{_libdir}/pkgconfig/%{name}.pc
