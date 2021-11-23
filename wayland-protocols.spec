@@ -1,12 +1,13 @@
 Summary:	Wayland protocols that adds functionality not available in the core protocol
 Name:		wayland-protocols
-Version:	1.23
+Version:	1.24
 Release:	1
 Group:		Development/C
 License:	MIT
 URL:		http://wayland.freedesktop.org/
 Source0:	http://wayland.freedesktop.org/releases/%{name}-%{version}.tar.xz
 BuildArch:	noarch
+BuildRequires:  meson
 BuildRequires:	pkgconfig(wayland-scanner)
 
 %description
@@ -31,13 +32,13 @@ wayland-protocols.
 %autosetup -p1
 
 %build
-%configure
+%meson
 
 %install
 mkdir -p %{buildroot}/%{_libdir}/pkgconfig/
 cp %{name}.pc %{buildroot}/%{_libdir}/pkgconfig/%{name}.pc
 
-%make_install
+%meson_install
 
 %files devel
 %doc README.md
