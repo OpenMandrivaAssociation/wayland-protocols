@@ -37,13 +37,10 @@ wayland-protocols.
 %meson_build
 
 %install
-mkdir -p %{buildroot}/%{_libdir}/pkgconfig/
-cp -rf  %{name}.pc %{buildroot}/%{_libdir}/pkgconfig/%{name}.pc
 
 %meson_install
 
 %files devel
 %doc README.md
-%{_libdir}/pkgconfig/%{name}.pc
 %{_datadir}/pkgconfig/%{name}.pc
 %{_datadir}/%{name}/*
