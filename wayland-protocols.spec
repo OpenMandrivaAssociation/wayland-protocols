@@ -1,11 +1,11 @@
 Summary:	Wayland protocols that adds functionality not available in the core protocol
 Name:		wayland-protocols
-Version:	1.33
+Version:	1.35
 Release:	1
 Group:		Development/C
 License:	MIT
-URL:		http://wayland.freedesktop.org/
-Source0:	http://wayland.freedesktop.org/releases/%{name}-%{version}.tar.xz
+URL:		https://wayland.freedesktop.org/
+Source0:	https://wayland.freedesktop.org/releases/%{name}-%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	meson
 BuildRequires:	pkgconfig(wayland-scanner)
