@@ -45,3 +45,4 @@ wayland-protocols.
 %{_datadir}/pkgconfig/%{name}.pc
 %dir %{_datadir}/%{name}
 %{_datadir}/%{name}/*
+%{_includedir}/wayland-protocols/
